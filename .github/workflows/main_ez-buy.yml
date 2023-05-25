@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'Ez-Buy'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B700722989484F9D844CDDCBE7234036 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2F434A699A3B42A884DB36AEA348CCA7 }}
           package: .
