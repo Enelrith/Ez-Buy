@@ -641,6 +641,7 @@ app.get("/logout", (req, res) => {
   req.session.destroy();
   res.redirect("/");
 });
-app.listen(5000, () => {
-  console.log("server started on port 5000");
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log("server started on port 3000");
 });
