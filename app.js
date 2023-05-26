@@ -15,17 +15,17 @@ const sessionStore = new MySQLStore({
   user: process.env.DATABASE_ROOT,
   password: process.env.DATABASE_PASSWORD,
   database: process.env.DATABASE,
-  port: process.env.DATABASE_PORT,
   clearExpired: true,
   checkExpirationInterval: 900000,
   expiration: 86400000,
+  ssl: 'required'
 });
 const db = mysql.createConnection({
   host: process.env.DATABASE_HOST,
   user: process.env.DATABASE_ROOT,
   password: process.env.DATABASE_PASSWORD,
   database: process.env.DATABASE,
-  port: process.env.PORT,
+  ssl: 'required'
 });
 
 const publicDir = path.join(__dirname, "./public");
