@@ -25,6 +25,7 @@ const db = mysql.createConnection({
   password: process.env.DATABASE_PASSWORD,
   database: process.env.DATABASE,
   port: process.env.DATABASE_PORT,
+  ssl: false,
 });
 
 const publicDir = path.join(__dirname, "./public");
